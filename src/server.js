@@ -1,7 +1,3 @@
-console.log("MONGO:", process.env.MONGO_URI);
-console.log("ACCESS:", process.env.JWT_ACCESS_SECRET);
-console.log("REFRESH:", process.env.JWT_REFRESH_SECRET);
-
 require("dotenv").config();
 
 const mongoose = require("mongoose");
