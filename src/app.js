@@ -5,11 +5,10 @@ const cors = require("cors");
 
 const app = express();
 
-app.use(express.json());
+const cors = require("cors");
 
-// ✅ CORS (put this EARLY)
 app.use(cors({
-  origin: "http://localhost:3000",
+  origin: process.env.CLIENT_URL,
   credentials: true
 }));
 
