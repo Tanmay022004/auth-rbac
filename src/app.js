@@ -5,12 +5,14 @@ const cors = require("cors");
 
 const app = express();
 
-const cors = require("cors");
+app.use(express.json());
 
+// ✅ CORS (put this EARLY)
 app.use(cors({
   origin: process.env.CLIENT_URL,
   credentials: true
 }));
+
 
 // Rate limiter
 const loginLimiter = rateLimit({
