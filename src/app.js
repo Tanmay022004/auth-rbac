@@ -9,7 +9,7 @@ app.use(express.json());
 
 // ✅ CORS (put this EARLY)
 app.use(cors({
-  origin: process.env.CLIENT_URL,
+  origin: "https://auth-rbac-frontend.vercel.app",
   credentials: true
 }));
 
